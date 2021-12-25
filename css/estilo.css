@@ -33,3 +33,12 @@ section nav li {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+footer h5 {
+  background-color: lightgreen;
+  padding: 0;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
