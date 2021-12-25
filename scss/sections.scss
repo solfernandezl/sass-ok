@@ -1,0 +1,23 @@
+section{
+    nav{
+        .menu{
+            background-color: lightgreen;
+            list-style-type: none;
+            padding: 0;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        li{
+            padding: 10px;
+            margin: 10px;
+            a{
+                color: $bg_text;
+                text-decoration: none;
+                padding: 20px;
+            }
+        }
+    }
+}
