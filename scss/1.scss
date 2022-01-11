@@ -1,0 +1,79 @@
+$bg_1: pink;
+$bg_2: rgb(190, 255, 190);
+$text1: rgb(47, 3, 47);
+$text2: navy;
+$border: black solid 2px;
+$nav: rgb(212, 0, 0);
+
+@mixin estilomain ($text, $bg){
+    background-color:$bg_1;
+    color: $text1;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: small;
+}
+.magnolia{
+    @include estilomain($text1,$bg_1)
+}
+.pensamiento{
+    @include estilomain($text2,$bg_2)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(241, 229, 231);
+}
+   
+header{
+    font-size: 80px;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration:underline ;
+}
+
+.imagen{
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    margin: auto;
+
+}
+.menu{
+    background-color: $nav;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+li{
+    padding: 10px;
+    margin: 10px;
+}
+.footer{
+    background-color: $nav;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    font-size: large;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+li{
+    padding: 10px;
+    margin: 10px;
+}
